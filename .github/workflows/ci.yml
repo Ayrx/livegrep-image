@@ -9,4 +9,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: github.idx
-          path: /data/github.idx
+          path: github.idx
