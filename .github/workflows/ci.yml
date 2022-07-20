@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  generate_index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./codesearch-index
+      - uses: actions/upload-artifact@v3
+        with:
+          name: github.idx
+          path: /data/github.idx

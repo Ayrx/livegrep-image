@@ -1,0 +1,4 @@
+name: "Generate livegrep index"
+runs:
+  using: "docker"
+  image: "Dockerfile"
